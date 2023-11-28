@@ -19,7 +19,7 @@ Version: 1.1:
 添加了自动创建数据集的文件夹
 在下载图片时随机抽取10张图片，5张放进测试集，5张放入验证集，其余放入训练集
 
-Author: kkking
+Author: kkking789
 Date: 23.11.27
 Version: 1.1
 """
