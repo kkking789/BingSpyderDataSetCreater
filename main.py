@@ -3,7 +3,7 @@
 
 可以自定义爬的图片的数量，以及爬的种类
 每次下载图片的time.sleep最好不要低于0.3，不然有被封IP的风险，可以把等待时间调小点，这样下的快
-headers最好改成自己的，现在这份代码里的是我的headers，这玩意可以在浏览器的开发者模式下找到，具体从网上查怎么找
+headers可以在浏览器的开发者模式下找到，具体从网上查怎么找
 另外引入了一个额外的库PIL，下载方式直接命令窗输入 pip install Pillow 即可
 
 这份爬虫对下载的图片的宽长积存在一定限制，这样防止下载到奇奇怪怪的图标，来污染数据集
@@ -90,9 +90,7 @@ class SpiderClass:
 def parse_opt():
     parser = argparse.ArgumentParser()
     parser.add_argument('--search', type=str, default='牡丹')
-    parser.add_argument('--headers', type=str, default='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
-                                                       '(KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 '
-                                                       'Edg/119.0.0.0')
+    parser.add_argument('--headers', type=str, default='')
     parser.add_argument('--savePath', type=str, default='./')
     parser.add_argument('--url', type=str, default='https://cn.bing.com/images/async?q={'
                                                    '}&first=0&count=29&cw=1280&ch=780&relp=32&apc=0&datsrc=I&layout'
