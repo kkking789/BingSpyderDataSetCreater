@@ -116,9 +116,7 @@ class SpiderClass:
 def parse_opt():
     parser = argparse.ArgumentParser()
     parser.add_argument('--search', type=str, default='梅花')
-    parser.add_argument('--headers', type=str, default='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
-                                                       '(KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 '
-                                                       'Edg/119.0.0.0')
+    parser.add_argument('--headers', type=str, default='')
     parser.add_argument('--savePath', type=str, default='./')
     parser.add_argument('--url', type=str, default='https://cn.bing.com/images/async?q={'
                                                    '}&first=0&count=29&cw=1280&ch=780&relp=32&apc=0&datsrc=I&layout'
