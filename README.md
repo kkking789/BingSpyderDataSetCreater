@@ -40,7 +40,7 @@
 
         5张放进测试集，5张放入验证集，其余放入训练集
 
-*Author: kkking  
+*Author: kkking789  
 Date: 23.11.28 
 Version: 1.1  *
 
