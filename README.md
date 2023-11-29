@@ -20,11 +20,14 @@
 
 ## 2，headers寻找方法
 
-1. 打开bing图片搜索并按F12发开开发者模式![](C:\Users\ASUS\AppData\Roaming\marktext\images\2023-11-28-23-21-32-image.png)
+1. 打开bing图片搜索并按F12发开开发者模式![image](https://github.com/kkking789/BingSpyderDataSetCreater/assets/140388891/73e1d741-b5a2-443d-985b-b909f54517bc)
 
-2. 点击网络，筛选Fetch/XHR![](C:\Users\ASUS\AppData\Roaming\marktext\images\2023-11-28-23-22-41-image.png)
 
-3. 点击任意一个事件，查看它的标头，并向下翻至请求标头，其中`User-Agent：`即为所需的headers![](C:\Users\ASUS\AppData\Roaming\marktext\images\2023-11-28-23-27-03-image.png)
+2. 点击网络，筛选Fetch/XHR![image](https://github.com/kkking789/BingSpyderDataSetCreater/assets/140388891/b15ea2db-9c52-4db1-8024-1fe8209379d0)
+
+
+3. 点击任意一个事件，查看它的标头，并向下翻至请求标头，其中`User-Agent：`即为所需的headers![image](https://github.com/kkking789/BingSpyderDataSetCreater/assets/140388891/2880c71d-d85a-4ddf-b757-bdbfd69c0422)
+
 - Version: 1.0:
   
   这是一个用来爬bing图片做分类数据集的简易爬虫
