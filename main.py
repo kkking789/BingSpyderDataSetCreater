@@ -147,7 +147,7 @@ class SpiderClass:
 
 def url_change(url, cnt):
     index = url.find("first=")
-    start_str = "first=" + str(cnt)
+    start_str = "first=" + str(cnt*30)
     return url[:index]+start_str+url[len("first=" + str(cnt-1))+index:]
 
 
