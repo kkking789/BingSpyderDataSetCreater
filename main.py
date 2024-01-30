@@ -111,10 +111,11 @@ class SpiderClass:
             try:
                 res = s.get(img_link, headers=self.headers, timeout=10)
             except requests.exceptions.ConnectionError :
-                res.status_code = 404
+                print("连接错误")
+                return
             except requests.exceptions.ChunkedEncodingError:
-                res.status_code = 404
                 print("网络错误")
+                return
             if res.status_code == 404:
                 print(f"图片{img_link}下载出错")
             else:
